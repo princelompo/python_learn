@@ -1,0 +1,80 @@
+mon_projet/
+│
+├── 📄 README.md                     ← Description du projet (Markdown)
+├── 📄 LICENSE                       ← Licence (MIT, GPL, etc.)
+├── 📄 .gitignore                    ← Fichiers ignorés par Git
+├── 📄 requirements.txt              ← Dépendances (production + dev)
+├── 📄 requirements-dev.txt          ← Dépendances de développement seulement
+├── 📄 setup.py                      ← Script d'installation du package
+├── 📄 pyproject.toml                ← Configuration moderne du projet
+│
+├── 📁 venv/                         ← ENVIRONNEMENT VIRTUEL
+│   ├── 📄 pyvenv.cfg                ← Configuration de l'environnement
+│   ├── 📁 bin/                      ← (macOS/Linux) Exécutables Python/pip
+│   │   ├── python                   ← Interpréteur isolé
+│   │   ├── pip                      ← pip isolé
+│   │   └── activate                 ← Script d'activation
+│   ├── 📁 lib/                      ← Bibliothèques installées
+│   │   └── python3.12/
+│   │       └── site-packages/
+│   │           ├── requests/
+│   │           ├── pandas/
+│   │           └── ...
+│   └── 📁 include/                  ← Fichiers d'en-tête C (interne)
+│
+├── 📁 src/                          ← CODE SOURCE (ou nom du package)
+│   │
+│   ├── 📄 __init__.py               ← Rend "src" importable
+│   │
+│   ├── 📁 core/                     ← Logique métier principale
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 calculs.py
+│   │   ├── 📄 validateurs.py
+│   │   └── 📄 constantes.py
+│   │
+│   ├── 📁 models/                   ← Définition des classes métier
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 utilisateur.py
+│   │   └── 📄 produit.py
+│   │
+│   ├── 📁 utils/                    ← Fonctions utilitaires
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 fichiers.py
+│   │   └── 📄 formatage.py
+│   │
+│   ├── 📁 api/                      ← (Si pertinent) Connecteurs API
+│   │   ├── 📄 __init__.py
+│   │   └── 📄 client.py
+│   │
+│   └── 📄 main.py                   ← Point d'entrée principal
+│
+├── 📁 tests/                        ← TESTS UNITAIRES ET FONCTIONNELS
+│   ├── 📄 __init__.py
+│   ├── 📄 test_calculs.py
+│   ├── 📄 test_validateurs.py
+│   ├── 📄 test_models.py
+│   └── 📁 fixtures/                 ← Données de test (JSON, CSV, etc.)
+│       ├── 📄 utilisateurs.json
+│       └── 📄 produits.csv
+│
+├── 📁 docs/                         ← DOCUMENTATION
+│   ├── 📄 index.md
+│   ├── 📄 installation.md
+│   └── 📄 utilisation.md
+│
+├── 📁 data/                         ← DONNÉES (hors code)
+│   ├── 📁 input/                    ← Données entrantes
+│   ├── 📁 output/                   ← Résultats générés
+│   └── 📁 cache/                    ← Fichiers temporaires
+│
+├── 📁 scripts/                      ← SCRIPTS UTILITAIRES
+│   ├── 📄 clean.py
+│   └── 📄 deploy.sh
+│
+├── 📁 logs/                         ← FICHIERS DE LOG
+│   └── 📄 app.log
+│
+└── 📁 config/                       ← CONFIGURATION
+    ├── 📄 settings.py
+    ├── 📄 dev.py
+    └── 📄 prod.py
