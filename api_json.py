@@ -111,7 +111,7 @@ print("-" * 40)
 # Écriture
 donnees_locales = [
     {"id": 1, "tache": "Apprendre Python", "faite": True},
-    {"id": 2, "tache": "Apprendre les APIs", "faite": False},
+    {"id": 2, "tache": "Apprendre les APIs", "faite": False},               
     {"id": 3, "tache": "Créer un projet", "faite": False}
 ]
 
