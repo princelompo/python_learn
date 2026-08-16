@@ -16,7 +16,7 @@ class Etudiant:
         try:
             for note in self.notes:
                 if not isinstance(note, (int, float)):
-                    raise ValueError(f"Note non numérique détectée : {note}")
+                    raise TypeError(f"Note non numérique détectée : {note}")
                 if note < 0 or note > 20:
                     raise ValueError(f"Note hors intervalle [0-20] : {note}")
             return sum(self.notes) / len(self.notes)
@@ -75,6 +75,7 @@ class Projet():
 
     def ajouter_membre(self, membre):
         if membre not in self.membres:
+            
             self.membres.append(membre)
             print(f"{membre} a été ajouté au projet {self.nom}.")
         else:

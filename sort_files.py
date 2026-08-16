@@ -38,7 +38,7 @@ def trier_choisir():
     print("7. Par date de modification (du plus récent au plus ancien)")
     print("8. Par extension (ordre alphabétique inversé)")
 
-    choix = input("Votre choix (1-8) : ")
+    choix = input("Votre choix (1-8) : ").strip()
 
     fichiers =  [f for f in dossier.iterdir() if f.is_file()]
     dossiers = [d for d in dossier.iterdir() if d.is_dir()]
