@@ -85,7 +85,7 @@ print("\n4️⃣ EXPRESSIONS GÉNÉRATRICES")
 print("-" * 40)
 
 # Création d'un générateur avec parenthèses
-gen_carres = (x**2 for x in range(5))
+gen_carres = (x**2 for x in range(5)) 
 print(f"Type de gen_carres : {type(gen_carres)}")  # generator
 
 # Consommation manuelle

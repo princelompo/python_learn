@@ -35,7 +35,7 @@ with open(tmp / "demo.txt", "w", encoding="utf-8") as f:
 
 # Lecture
 with open(tmp / "demo.txt", "r", encoding="utf-8") as f:
-    print("Contenu :", f.read())
+    print("Contenu :\n", f.read())
 
 # ----------------------------------------------
 # 2. GESTIONNAIRE DE CONTEXTE AVEC UNE CLASSE
