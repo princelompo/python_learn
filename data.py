@@ -9,7 +9,7 @@ print("=" * 60)
 
 # ----------------------------------------------
 
-dossier = Path.cwd() /'LEARNPY'
+dossier = Path.cwd()
 
 
 
@@ -21,7 +21,7 @@ with open(dossier / "data.csv", "r", encoding="utf-8") as f:
 
 with open(dossier / "data.csv", "a", newline="", encoding="utf-8") as f:
     writer = csv.writer(f) # Crée un objet écrivain pour ajouter des lignes au CSV
-    writer.writerow(["David", "Bonhomme", 28, "bonhomme@mail.com", "Alger", "Policier",50000]) # Ajoute une nouvelle ligne au CSV
+    writer.writerow(["David", "Bonhomme", 28, "Alger", "bonhomme@mail.com", "Policier", 50000]) # Ajoute une nouvelle ligne au CSV
 print("Nouvelle ligne ajoutée au CSV.")
 
 with open(dossier / "data.csv", "r", encoding="utf-8") as f:
