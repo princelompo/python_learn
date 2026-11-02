@@ -64,6 +64,7 @@ class Chat(Animal):
                 
 class Canard(Volant):
     def __init__(self, nom, age, envergure, couleur):
+        
         super().__init__(nom, age, envergure)
         self.couleur = couleur
 
